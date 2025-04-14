@@ -4,6 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --bg-primary: #ffffff;
+  --text-primary: #262626;
+  --border-primary: #e5e7eb;
+}
+
+.dark {
+  --bg-primary: #1a1a1a;
+  --text-primary: #f3f4f6;
+  --border-primary: #374151;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
 @layer components {
   .hoverEffect {
     @apply duration-300 cursor-pointer;

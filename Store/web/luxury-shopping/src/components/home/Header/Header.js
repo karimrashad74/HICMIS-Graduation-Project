@@ -7,6 +7,9 @@ import { logo, logoLight } from "../../../assets/images";
 import Image from "../../designLayouts/Image";
 import { navBarList } from "../../../constants";
 import Flex from "../../designLayouts/Flex";
+import { FaSun, FaMoon } from "react-icons/fa";
+import { useContext } from "react";
+import { ThemeContext } from "../../../context/ThemeContext";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(true);
@@ -14,6 +17,7 @@ const Header = () => {
   const [category, setCategory] = useState(false);
   const [brand, setBrand] = useState(false);
   const location = useLocation();
+  const { theme, toggleTheme } = useContext(ThemeContext);
   useEffect(() => {
     let ResponsiveMenu = () => {
       if (window.innerWidth < 667) {
@@ -54,7 +58,14 @@ const Header = () => {
                       <li>{title}</li>
                     </NavLink>
                   ))}
-                </>
+<button onClick={toggleTheme}>
+            {theme === "light" ? (
+              <span style={{ color: "yellow" }}>🌞</span>
+            ) : (
+              <span style={{ color: "navy" }}>🌙</span>
+            )}
+          </button>
+                          </>
               </motion.ul>
             )}
             <HiMenuAlt2
