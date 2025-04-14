@@ -28,12 +28,12 @@ const Footer = () => {
     }
   };
   return (
-    <div className="w-full bg-[#F5F5F3] py-20">
+    <div className="w-full bg-[var(--bg-primary)] py-20">
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2  xl:grid-cols-6 px-4 gap-10">
         <div className="col-span-2">
           <FooterListTitle title=" More about Luxury Store" />
           <div className="flex flex-col gap-6">
-            <p className="text-base w-full xl:w-[80%]">
+            <p className="text-base w-full xl:w-[80%] text-[var(--text-primary)]">
             We are a prototype information system for a graduation project of HICMIS.
            </p>
             <ul className="flex items-center gap-2">
@@ -70,19 +70,19 @@ const Footer = () => {
         <div>
           <FooterListTitle title="Shop" />
           <ul className="flex flex-col gap-2">
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-[var(--text-primary)] hover:text-[#FFFFFF] hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
             Men's clothing
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-[var(--text-primary)] hover:text-[#FFFFFF] hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
             Women's clothing
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-[var(--text-primary)] hover:text-[#FFFFFF] hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
             Children's clothing
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-[var(--text-primary)] hover:text-[#FFFFFF] hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
             Sportswear
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-[var(--text-primary)] hover:text-[#FFFFFF] hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               New Arrivals
             </li>
           </ul>
@@ -90,19 +90,19 @@ const Footer = () => {
         <div>
           <FooterListTitle title="Your account" />
           <ul className="flex flex-col gap-2">
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-[var(--text-primary)] hover:text-[#FFFFFF] hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Profile
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-[var(--text-primary)] hover:text-[#FFFFFF] hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Orders
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-[var(--text-primary)] hover:text-[#FFFFFF] hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Addresses
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-[var(--text-primary)] hover:text-[#FFFFFF] hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Account Details
             </li>
-            <li className="font-titleFont text-base text-lightText hover:text-black hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
+            <li className="font-titleFont text-base text-[var(--text-primary)] hover:text-[#FFFFFF] hover:underline decoration-[1px] decoration-gray-500 underline-offset-2 cursor-pointer duration-300">
               Payment Options
             </li>
           </ul>
@@ -128,7 +128,7 @@ const Footer = () => {
                   <input
                     onChange={(e) => setEmailInfo(e.target.value)}
                     value={emailInfo}
-                    className="w-full h-12 border-b border-gray-400 bg-transparent px-4 text-primeColor text-lg placeholder:text-base outline-none"
+                    className="w-full h-12 border-b border-[var(--border-primary)] bg-transparent px-4 text-[var(--text-primary)] text-lg placeholder:text-[var(--text-primary)] outline-none"
                     type="text"
                     placeholder="Insert your email ...*"
                   />
@@ -140,7 +140,7 @@ const Footer = () => {
                 </div>
                 <button
                   onClick={handleSubscription}
-                  className="bg-white text-lightText w-[30%] h-10 hover:bg-black hover:text-white duration-300 text-base tracking-wide"
+                  className="bg-[var(--bg-secondary)] text-[var(--text-primary)] w-[30%] h-10 hover:bg-black hover:text-white duration-300 text-base tracking-wide"
                 >
                   Subscribe
                 </button>
