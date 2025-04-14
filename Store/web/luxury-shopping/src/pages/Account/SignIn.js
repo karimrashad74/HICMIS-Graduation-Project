@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { logoLight } from "../../assets/images";
+import { FaGoogle, FaFacebook } from "react-icons/fa";
 
 const SignIn = () => {
   // ============= Initial State Start here =============
@@ -138,14 +139,14 @@ const SignIn = () => {
                 {/* Email */}
                 <div className="flex flex-col gap-.5">
                   <p className="font-titleFont text-base font-semibold text-gray-600">
-                    Work Email
+                    E-mail
                   </p>
                   <input
                     onChange={handleEmail}
                     value={email}
                     className="w-full h-8 placeholder:text-sm placeholder:tracking-wide px-4 text-base font-medium placeholder:font-normal rounded-md border-[1px] border-gray-400 outline-none"
                     type="email"
-                    placeholder="john@workemail.com"
+                    placeholder="karim@gmail.com"
                   />
                   {errEmail && (
                     <p className="text-sm text-red-500 font-titleFont font-semibold px-4">
@@ -181,7 +182,15 @@ const SignIn = () => {
                 >
                   Sign In
                 </button>
-                <p className="text-sm text-center font-titleFont font-medium">
+                <div className="flex gap-4 mt-4">
+                  <button className="flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white w-full py-2 rounded-md duration-300">
+                    <FaGoogle /> Sign in with Google
+                  </button>
+                  <button className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white w-full py-2 rounded-md duration-300">
+                    <FaFacebook /> Sign in with Facebook
+                  </button>
+                </div>
+                <p className="text-sm text-center font-titleFont font-medium mt-4">
                   Don't have an Account?{" "}
                   <Link to="/signup">
                     <span className="hover:text-blue-600 duration-300">
