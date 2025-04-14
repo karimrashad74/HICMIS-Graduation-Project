@@ -30,11 +30,11 @@ const Cart = () => {
     }
   }, [totalAmt]);
   return (
-    <div className="max-w-container mx-auto px-4">
+    <div className="max-w-container mx-auto px-4 bg-[var(--bg-primary)] text-[var(--text-primary)]">
       <Breadcrumbs title="Cart" />
       {products.length > 0 ? (
         <div className="pb-20">
-          <div className="w-full h-20 bg-[#F5F7F7] text-primeColor hidden lgl:grid grid-cols-5 place-content-center px-6 text-lg font-titleFont font-semibold">
+          <div className="w-full h-20 bg-[var(--bg-primary)] text-[var(--text-primary)] hidden lgl:grid grid-cols-5 place-content-center px-6 text-lg font-titleFont font-semibold border-b border-[var(--border-primary)]">
             <h2 className="col-span-2">Product</h2>
             <h2>Price</h2>
             <h2>Quantity</h2>
@@ -115,7 +115,7 @@ const Cart = () => {
               alt="emptyCart"
             />
           </div>
-          <div className="max-w-[500px] p-4 py-8 bg-white flex gap-4 flex-col items-center rounded-md shadow-lg">
+          <div className="max-w-[500px] p-4 py-8 bg-[var(--bg-primary)] text-[var(--text-primary)] flex gap-4 flex-col items-center rounded-md shadow-lg border border-[var(--border-primary)]">
             <h1 className="font-titleFont text-xl font-bold uppercase">
               Your Cart feels lonely.
             </h1>
