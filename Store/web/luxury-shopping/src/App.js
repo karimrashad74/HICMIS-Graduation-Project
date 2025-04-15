@@ -14,6 +14,7 @@ import SpecialCase from "./components/SpecialCase/SpecialCase";
 import About from "./pages/About/About";
 import SignIn from "./pages/Account/SignIn";
 import SignUp from "./pages/Account/SignUp";
+import Chat from "./pages/Chat/Chat";
 import Cart from "./pages/Cart/Cart";
 import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
@@ -62,6 +63,7 @@ const App = () => {
         <Route path="paymentgateway" element={<Payment />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="signin" element={<SignIn />} />
+        <Route path="chat" element={<Chat />} />
       </Route>
     )
   );
