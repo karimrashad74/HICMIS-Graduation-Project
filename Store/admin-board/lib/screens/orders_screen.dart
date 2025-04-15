@@ -1,3 +1,4 @@
+import 'package:admin_board/theme/admin_theme.dart';
 import 'package:flutter/material.dart';
 
 class OrdersScreen extends StatelessWidget {
@@ -21,6 +22,7 @@ class OrdersScreen extends StatelessWidget {
             indicatorColor: Colors.white,
             labelStyle: TextStyle(fontWeight: FontWeight.bold),
           ),
+          backgroundColor: AdminTheme.primaryColor,
         ),
         body: const TabBarView(
           children: [

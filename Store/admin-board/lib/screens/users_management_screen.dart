@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:admin_board/theme/admin_theme.dart';
 
 class UsersManagementScreen extends StatelessWidget {
   const UsersManagementScreen({super.key});
@@ -8,6 +9,7 @@ class UsersManagementScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Users Management'),
+        backgroundColor: AdminTheme.primaryColor,
       ),
       body: Center(
         child: Padding(

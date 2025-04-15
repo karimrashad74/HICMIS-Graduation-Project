@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:admin_board/theme/admin_theme.dart';
 
 class AdminProfileScreen extends StatelessWidget {
   const AdminProfileScreen({super.key});
@@ -8,6 +9,7 @@ class AdminProfileScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Admin Profile'),
+        backgroundColor: AdminTheme.primaryColor,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
